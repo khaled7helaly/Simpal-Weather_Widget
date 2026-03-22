@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Weather</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="/css/style.css">
+
+    </head>
+
+    <body> 
+        <h2>{{>header}}</h2>
+        
+    <section class="weather-section " width="80%" height="100vh" margin="0 auto"> 
+        <div class="back-img"> </div>
+
+        <form id="form1" class="weather-form" >
+            <input type="text" class="address" id="address" placeholder="Enter city name">
+            <button type="submit" >Get Weather</button>
+        </form>
+  
+
+            <div class="card_weather">
+
+                
+                    <div class="card-header">
+                        <div class="weather-logo">
+                        <img src="/images/weather.png" alt="weather icon">
+                        </div>
+                        <div class="weather-text">
+                        <h1 class="weather-title">{{title}}</h1>
+                        <p>{{desc}}</p>
+                        </div>
+                         <p id="error" style="color:red;"></p> 
+                    </div>
+                        
+
+
+                            
+     <div class="weather-result" id="weather-result" >
+
+            <div class="loc_fcast">
+                <p>
+                    <i class="fas fa-map-marker-alt info-icon"></i>
+                    <strong>Location :</strong> <span id="location"></span>
+                </p>
+
+                <p>
+                    <i class="fas fa-cloud-sun info-icon"></i>
+                    <strong>Forecast :</strong> <span id="forecast"></span>
+                </p>
+            </div>
+            
+            <div class="lat-lon">
+                <p>
+                    <i class="fas fa-ruler-horizontal info-icon"></i>
+                    <strong>Latitude :</strong> <span id="latitude"></span>
+                </p>
+
+                <p>
+                    <i class="fas fa-ruler-vertical info-icon"></i>
+                    <strong>Longitude :</strong> <span id="longitude"></span>
+                </p>
+            </div>
+
+    </div>
+
+    </section>
+
+          <script src="/js/script.js"></script>
+
+          </body>
+</html>
